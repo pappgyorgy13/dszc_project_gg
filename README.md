@@ -1,1 +1,2 @@
-# dszc_project_gg
+# DSZC_Project
+nincs
