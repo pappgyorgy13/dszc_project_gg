@@ -1,29 +1,24 @@
-/*---------------------------------------------------------------------
-    File Name: custom.js
----------------------------------------------------------------------*/
+
 
 $(function () {
 
 	"use strict";
 
-	/* Preloader
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	setTimeout(function () {
 		$('.loader_bg').fadeToggle();
 	}, 1500);
 
 
-	/* Tooltip
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	$(document).ready(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 
 
-	/* Mouseover
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	$(document).ready(function () {
 		$(".main-menu ul li.megamenu").mouseover(function () {
@@ -40,8 +35,7 @@ $(function () {
 
 
 
-	/* Scroll to Top
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	$(window).on('scroll', function () {
 		scroll = $(window).scrollTop();
@@ -59,8 +53,7 @@ $(function () {
 
 
 	
-	/* Countdown
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	$('[data-countdown]').each(function () {
 		var $this = $(this),
@@ -76,8 +69,7 @@ $(function () {
 	});
 
 
-	/* Fancybox
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	$(".fancybox").fancybox({
 		maxWidth: 1200,
@@ -86,8 +78,7 @@ $(function () {
 		height: '70%',
 	});
 
-	/* Toggle sidebar
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	$(document).ready(function () {
 		$('#sidebarCollapse').on('click', function () {
@@ -96,9 +87,8 @@ $(function () {
 		});
 	});
 
-	/* Product slider 
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	// optional
+	
+	
 	$('#blogCarousel').carousel({
 		interval: 5000
 	});
